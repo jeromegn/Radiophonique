@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD91836214A6690100ADE448 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD91836114A6690100ADE448 /* Cocoa.framework */; };
+		FD91836C14A6690100ADE448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD91836A14A6690100ADE448 /* InfoPlist.strings */; };
+		FD91836E14A6690100ADE448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91836D14A6690100ADE448 /* main.m */; };
+		FD91837214A6690100ADE448 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FD91837014A6690100ADE448 /* Credits.rtf */; };
+		FD91837514A6690100ADE448 /* RadiophoniqueAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91837414A6690100ADE448 /* RadiophoniqueAppDelegate.m */; };
+		FD91837814A6690100ADE448 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD91837614A6690100ADE448 /* MainMenu.xib */; };
+		FD91838014A6690200ADE448 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD91837F14A6690200ADE448 /* SenTestingKit.framework */; };
+		FD91838114A6690200ADE448 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD91836114A6690100ADE448 /* Cocoa.framework */; };
+		FD91838914A6690200ADE448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD91838714A6690200ADE448 /* InfoPlist.strings */; };
+		FD91838B14A6690200ADE448 /* RadiophoniqueTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FD91838A14A6690200ADE448 /* RadiophoniqueTests.h */; };
+		FD91838D14A6690200ADE448 /* RadiophoniqueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91838C14A6690200ADE448 /* RadiophoniqueTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD91838214A6690200ADE448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD91835414A6690000ADE448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD91835C14A6690100ADE448;
+			remoteInfo = Radiophonique;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD91835D14A6690100ADE448 /* Radiophonique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radiophonique.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD91836114A6690100ADE448 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FD91836414A6690100ADE448 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FD91836514A6690100ADE448 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FD91836614A6690100ADE448 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD91836914A6690100ADE448 /* Radiophonique-Info.plist */ = {isa = PBXFileReference; path = "Radiophonique-Info.plist"; sourceTree = "<group>"; };
+		FD91836B14A6690100ADE448 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD91836D14A6690100ADE448 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD91836F14A6690100ADE448 /* Radiophonique-Prefix.pch */ = {isa = PBXFileReference; path = "Radiophonique-Prefix.pch"; sourceTree = "<group>"; };
+		FD91837114A6690100ADE448 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FD91837314A6690100ADE448 /* RadiophoniqueAppDelegate.h */ = {isa = PBXFileReference; path = RadiophoniqueAppDelegate.h; sourceTree = "<group>"; };
+		FD91837414A6690100ADE448 /* RadiophoniqueAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadiophoniqueAppDelegate.m; sourceTree = "<group>"; };
+		FD91837714A6690100ADE448 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FD91837E14A6690200ADE448 /* RadiophoniqueTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadiophoniqueTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD91837F14A6690200ADE448 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FD91838614A6690200ADE448 /* RadiophoniqueTests-Info.plist */ = {isa = PBXFileReference; path = "RadiophoniqueTests-Info.plist"; sourceTree = "<group>"; };
+		FD91838814A6690200ADE448 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD91838A14A6690200ADE448 /* RadiophoniqueTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadiophoniqueTests.h; sourceTree = "<group>"; };
+		FD91838C14A6690200ADE448 /* RadiophoniqueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadiophoniqueTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD91835A14A6690100ADE448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD91836214A6690100ADE448 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD91837A14A6690200ADE448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD91838014A6690200ADE448 /* SenTestingKit.framework in Frameworks */,
+				FD91838114A6690200ADE448 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD91835214A6690000ADE448 = {
+			isa = PBXGroup;
+			children = (
+				FD91836714A6690100ADE448 /* Radiophonique */,
+				FD91838414A6690200ADE448 /* RadiophoniqueTests */,
+				FD91836014A6690100ADE448 /* Frameworks */,
+				FD91835E14A6690100ADE448 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD91835E14A6690100ADE448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD91835D14A6690100ADE448 /* Radiophonique.app */,
+				FD91837E14A6690200ADE448 /* RadiophoniqueTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD91836014A6690100ADE448 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD91836114A6690100ADE448 /* Cocoa.framework */,
+				FD91837F14A6690200ADE448 /* SenTestingKit.framework */,
+				FD91836314A6690100ADE448 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD91836314A6690100ADE448 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD91836414A6690100ADE448 /* AppKit.framework */,
+				FD91836514A6690100ADE448 /* CoreData.framework */,
+				FD91836614A6690100ADE448 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FD91836714A6690100ADE448 /* Radiophonique */ = {
+			isa = PBXGroup;
+			children = (
+				FD91837314A6690100ADE448 /* RadiophoniqueAppDelegate.h */,
+				FD91837414A6690100ADE448 /* RadiophoniqueAppDelegate.m */,
+				FD91837614A6690100ADE448 /* MainMenu.xib */,
+				FD91836814A6690100ADE448 /* Supporting Files */,
+			);
+			path = Radiophonique;
+			sourceTree = "<group>";
+		};
+		FD91836814A6690100ADE448 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD91836914A6690100ADE448 /* Radiophonique-Info.plist */,
+				FD91836A14A6690100ADE448 /* InfoPlist.strings */,
+				FD91836D14A6690100ADE448 /* main.m */,
+				FD91836F14A6690100ADE448 /* Radiophonique-Prefix.pch */,
+				FD91837014A6690100ADE448 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD91838414A6690200ADE448 /* RadiophoniqueTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD91838A14A6690200ADE448 /* RadiophoniqueTests.h */,
+				FD91838C14A6690200ADE448 /* RadiophoniqueTests.m */,
+				FD91838514A6690200ADE448 /* Supporting Files */,
+			);
+			path = RadiophoniqueTests;
+			sourceTree = "<group>";
+		};
+		FD91838514A6690200ADE448 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD91838614A6690200ADE448 /* RadiophoniqueTests-Info.plist */,
+				FD91838714A6690200ADE448 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD91835C14A6690100ADE448 /* Radiophonique */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD91839014A6690200ADE448 /* Build configuration list for PBXNativeTarget "Radiophonique" */;
+			buildPhases = (
+				FD91835914A6690100ADE448 /* Sources */,
+				FD91835A14A6690100ADE448 /* Frameworks */,
+				FD91835B14A6690100ADE448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Radiophonique;
+			productName = Radiophonique;
+			productReference = FD91835D14A6690100ADE448 /* Radiophonique.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD91837D14A6690200ADE448 /* RadiophoniqueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD91839314A6690200ADE448 /* Build configuration list for PBXNativeTarget "RadiophoniqueTests" */;
+			buildPhases = (
+				FD91837914A6690200ADE448 /* Sources */,
+				FD91837A14A6690200ADE448 /* Frameworks */,
+				FD91837B14A6690200ADE448 /* Resources */,
+				FD91837C14A6690200ADE448 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD91838314A6690200ADE448 /* PBXTargetDependency */,
+			);
+			name = RadiophoniqueTests;
+			productName = RadiophoniqueTests;
+			productReference = FD91837E14A6690200ADE448 /* RadiophoniqueTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD91835414A6690000ADE448 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FD91835714A6690000ADE448 /* Build configuration list for PBXProject "Radiophonique" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD91835214A6690000ADE448;
+			productRefGroup = FD91835E14A6690100ADE448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD91835C14A6690100ADE448 /* Radiophonique */,
+				FD91837D14A6690200ADE448 /* RadiophoniqueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD91835B14A6690100ADE448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD91836C14A6690100ADE448 /* InfoPlist.strings in Resources */,
+				FD91837214A6690100ADE448 /* Credits.rtf in Resources */,
+				FD91837814A6690100ADE448 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD91837B14A6690200ADE448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD91838914A6690200ADE448 /* InfoPlist.strings in Resources */,
+				FD91838B14A6690200ADE448 /* RadiophoniqueTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD91837C14A6690200ADE448 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD91835914A6690100ADE448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD91836E14A6690100ADE448 /* main.m in Sources */,
+				FD91837514A6690100ADE448 /* RadiophoniqueAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD91837914A6690200ADE448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD91838D14A6690200ADE448 /* RadiophoniqueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD91838314A6690200ADE448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD91835C14A6690100ADE448 /* Radiophonique */;
+			targetProxy = FD91838214A6690200ADE448 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD91836A14A6690100ADE448 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD91836B14A6690100ADE448 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD91837014A6690100ADE448 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD91837114A6690100ADE448 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FD91837614A6690100ADE448 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD91837714A6690100ADE448 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		FD91838714A6690200ADE448 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD91838814A6690200ADE448 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD91838E14A6690200ADE448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FD91838F14A6690200ADE448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FD91839114A6690200ADE448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radiophonique/Radiophonique-Prefix.pch";
+				INFOPLIST_FILE = "Radiophonique/Radiophonique-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FD91839214A6690200ADE448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radiophonique/Radiophonique-Prefix.pch";
+				INFOPLIST_FILE = "Radiophonique/Radiophonique-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FD91839414A6690200ADE448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Radiophonique.app/Contents/MacOS/Radiophonique";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radiophonique/Radiophonique-Prefix.pch";
+				INFOPLIST_FILE = "RadiophoniqueTests/RadiophoniqueTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FD91839514A6690200ADE448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Radiophonique.app/Contents/MacOS/Radiophonique";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Radiophonique/Radiophonique-Prefix.pch";
+				INFOPLIST_FILE = "RadiophoniqueTests/RadiophoniqueTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD91835714A6690000ADE448 /* Build configuration list for PBXProject "Radiophonique" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD91838E14A6690200ADE448 /* Debug */,
+				FD91838F14A6690200ADE448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD91839014A6690200ADE448 /* Build configuration list for PBXNativeTarget "Radiophonique" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD91839114A6690200ADE448 /* Debug */,
+				FD91839214A6690200ADE448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD91839314A6690200ADE448 /* Build configuration list for PBXNativeTarget "RadiophoniqueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD91839414A6690200ADE448 /* Debug */,
+				FD91839514A6690200ADE448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD91835414A6690000ADE448 /* Project object */;
+}

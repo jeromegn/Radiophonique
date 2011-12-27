@@ -245,6 +245,9 @@
 /* Begin PBXProject section */
 		FD91835414A6690000ADE448 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = FD91835714A6690000ADE448 /* Build configuration list for PBXProject "Radiophonique" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;

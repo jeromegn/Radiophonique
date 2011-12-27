@@ -18,6 +18,11 @@
 		FD91838914A6690200ADE448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD91838714A6690200ADE448 /* InfoPlist.strings */; };
 		FD91838B14A6690200ADE448 /* RadiophoniqueTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FD91838A14A6690200ADE448 /* RadiophoniqueTests.h */; };
 		FD91838D14A6690200ADE448 /* RadiophoniqueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91838C14A6690200ADE448 /* RadiophoniqueTests.m */; };
+		FD91845814A8F71A00ADE448 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91845714A8F71A00ADE448 /* AppController.m */; };
+		FD91845C14A8F7A100ADE448 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91845B14A8F7A100ADE448 /* MainViewController.m */; };
+		FD91846014A8F81200ADE448 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD91845F14A8F81200ADE448 /* Main.xib */; };
+		FD91846914A9037400ADE448 /* Mix.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91846814A9037400ADE448 /* Mix.m */; };
+		FD91846D14A9081E00ADE448 /* MixesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91846C14A9081E00ADE448 /* MixesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,20 +41,29 @@
 		FD91836414A6690100ADE448 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FD91836514A6690100ADE448 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FD91836614A6690100ADE448 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FD91836914A6690100ADE448 /* Radiophonique-Info.plist */ = {isa = PBXFileReference; path = "Radiophonique-Info.plist"; sourceTree = "<group>"; };
+		FD91836914A6690100ADE448 /* Radiophonique-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Radiophonique-Info.plist"; sourceTree = "<group>"; };
 		FD91836B14A6690100ADE448 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD91836D14A6690100ADE448 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FD91836F14A6690100ADE448 /* Radiophonique-Prefix.pch */ = {isa = PBXFileReference; path = "Radiophonique-Prefix.pch"; sourceTree = "<group>"; };
+		FD91836F14A6690100ADE448 /* Radiophonique-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Radiophonique-Prefix.pch"; sourceTree = "<group>"; };
 		FD91837114A6690100ADE448 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FD91837314A6690100ADE448 /* RadiophoniqueAppDelegate.h */ = {isa = PBXFileReference; path = RadiophoniqueAppDelegate.h; sourceTree = "<group>"; };
+		FD91837314A6690100ADE448 /* RadiophoniqueAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadiophoniqueAppDelegate.h; sourceTree = "<group>"; };
 		FD91837414A6690100ADE448 /* RadiophoniqueAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadiophoniqueAppDelegate.m; sourceTree = "<group>"; };
 		FD91837714A6690100ADE448 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FD91837E14A6690200ADE448 /* RadiophoniqueTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadiophoniqueTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD91837F14A6690200ADE448 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FD91838614A6690200ADE448 /* RadiophoniqueTests-Info.plist */ = {isa = PBXFileReference; path = "RadiophoniqueTests-Info.plist"; sourceTree = "<group>"; };
+		FD91838614A6690200ADE448 /* RadiophoniqueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RadiophoniqueTests-Info.plist"; sourceTree = "<group>"; };
 		FD91838814A6690200ADE448 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD91838A14A6690200ADE448 /* RadiophoniqueTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadiophoniqueTests.h; sourceTree = "<group>"; };
 		FD91838C14A6690200ADE448 /* RadiophoniqueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadiophoniqueTests.m; sourceTree = "<group>"; };
+		FD91845614A8F71A00ADE448 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		FD91845714A8F71A00ADE448 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		FD91845A14A8F7A100ADE448 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FD91845B14A8F7A100ADE448 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FD91845F14A8F81200ADE448 /* Main.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
+		FD91846714A9037400ADE448 /* Mix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mix.h; sourceTree = "<group>"; };
+		FD91846814A9037400ADE448 /* Mix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mix.m; sourceTree = "<group>"; };
+		FD91846B14A9081E00ADE448 /* MixesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixesTableViewController.h; sourceTree = "<group>"; };
+		FD91846C14A9081E00ADE448 /* MixesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +129,11 @@
 		FD91836714A6690100ADE448 /* Radiophonique */ = {
 			isa = PBXGroup;
 			children = (
+				FD91846A14A907FA00ADE448 /* Controllers */,
+				FD91846614A9035600ADE448 /* Models */,
+				FD91846514A8FBA700ADE448 /* UI */,
 				FD91837314A6690100ADE448 /* RadiophoniqueAppDelegate.h */,
 				FD91837414A6690100ADE448 /* RadiophoniqueAppDelegate.m */,
-				FD91837614A6690100ADE448 /* MainMenu.xib */,
 				FD91836814A6690100ADE448 /* Supporting Files */,
 			);
 			path = Radiophonique;
@@ -152,6 +168,37 @@
 				FD91838714A6690200ADE448 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD91846514A8FBA700ADE448 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FD91845F14A8F81200ADE448 /* Main.xib */,
+				FD91837614A6690100ADE448 /* MainMenu.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FD91846614A9035600ADE448 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD91846714A9037400ADE448 /* Mix.h */,
+				FD91846814A9037400ADE448 /* Mix.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FD91846A14A907FA00ADE448 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD91845614A8F71A00ADE448 /* AppController.h */,
+				FD91845714A8F71A00ADE448 /* AppController.m */,
+				FD91845A14A8F7A100ADE448 /* MainViewController.h */,
+				FD91845B14A8F7A100ADE448 /* MainViewController.m */,
+				FD91846B14A9081E00ADE448 /* MixesTableViewController.h */,
+				FD91846C14A9081E00ADE448 /* MixesTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +271,7 @@
 				FD91836C14A6690100ADE448 /* InfoPlist.strings in Resources */,
 				FD91837214A6690100ADE448 /* Credits.rtf in Resources */,
 				FD91837814A6690100ADE448 /* MainMenu.xib in Resources */,
+				FD91846014A8F81200ADE448 /* Main.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +309,10 @@
 			files = (
 				FD91836E14A6690100ADE448 /* main.m in Sources */,
 				FD91837514A6690100ADE448 /* RadiophoniqueAppDelegate.m in Sources */,
+				FD91845814A8F71A00ADE448 /* AppController.m in Sources */,
+				FD91845C14A8F7A100ADE448 /* MainViewController.m in Sources */,
+				FD91846914A9037400ADE448 /* Mix.m in Sources */,
+				FD91846D14A9081E00ADE448 /* MixesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +484,7 @@
 				FD91839214A6690200ADE448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD91839314A6690200ADE448 /* Build configuration list for PBXNativeTarget "RadiophoniqueTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +493,7 @@
 				FD91839514A6690200ADE448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,10 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface RadiophoniqueAppDelegate : NSObject <NSApplicationDelegate> {
-    NSWindow *window;
-}
+@class AppController;
 
-@property (assign) IBOutlet NSWindow *window;
+@interface RadiophoniqueAppDelegate : NSObject <NSApplicationDelegate> {
+    AppController *appController;
+}
 
 @end

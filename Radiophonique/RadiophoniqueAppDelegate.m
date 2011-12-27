@@ -7,14 +7,13 @@
 //
 
 #import "RadiophoniqueAppDelegate.h"
+#import "AppController.h"
 
 @implementation RadiophoniqueAppDelegate
 
-@synthesize window;
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    appController = [[AppController alloc] init];
 }
 
 @end

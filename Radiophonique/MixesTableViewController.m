@@ -8,6 +8,8 @@
 
 #import "MixesTableViewController.h"
 #import "Mix.h"
+#import "JSONFetcher.h"
+#import "MixViewController.h"
 
 @implementation MixesTableViewController
 
@@ -16,21 +18,36 @@
 {
     self = [super init];
     if (self) {
-        list = [[NSMutableArray alloc] init];
+        mixes = [[NSMutableArray alloc] init];
     }
     
     return self;
 }
 
 - (void) dealloc {
-    [list release];
+    [mixes release];
     [super dealloc];
 }
 
 #pragma mark - User Actions
 - (IBAction)add:(id)sender {
-    [list addObject:[[Mix alloc] init]];
-    [tableView reloadData];
+    fetcher = [[JSONFetcher alloc]
+               initWithURLString:@"http://8tracks.com/mixes?format=json&sort=popular&api_key=87c41cb65d45b260f5da4eeebd7a7bb2c9d2effc"
+               receiver:self
+               action:@selector(receiveResponse:)];
+    [fetcher start];
+}
+
+- (void)receiveResponse:(JSONFetcher *)aFetcher
+{
+    NSAssert(aFetcher == fetcher,
+             @"In this example, aFetcher is always the same as the fetcher ivar we set above");
+    if ([fetcher.data length] > 0) {
+        [mixes addObjectsFromArray:[fetcher.result objectForKey:@"mixes"]];
+        [tableView reloadData];
+    }
+    [fetcher release];
+    fetcher = nil;
 }
 
 
@@ -44,14 +61,14 @@
 //}
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
-    return [list count];
+    return [mixes count];
 }
 
 #pragma mark Delegate
-- (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    NSText *text = [[[NSText alloc] initWithFrame:CGRectMake(10, 2, 100, 30)] autorelease];
-    text.string = [[list objectAtIndex:row] name];
-    return text;
+- (MixViewController *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    MixViewController *mixView = [[MixViewController alloc] initWithFrame:CGRectMake(10, 2, 100, 30)];
+    //text.string = [[mixes objectAtIndex:row] objectForKey:@"name"];
+    return mixView;
 }
 
 @end

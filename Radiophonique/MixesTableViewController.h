@@ -8,12 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@class JSONFetcher;
+@class MixViewController;
+
 @interface MixesTableViewController : NSObject <NSTableViewDataSource> {
 @private
     IBOutlet NSTableView *tableView;
-    NSMutableArray *list;
+    NSMutableArray *mixes;
+    JSONFetcher *fetcher;
 }
 
 -(IBAction)add:(id)sender;
+-(void)receiveResponse:(JSONFetcher *)aFetcher;
 
 @end

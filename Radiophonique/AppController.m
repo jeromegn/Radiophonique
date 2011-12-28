@@ -8,6 +8,7 @@
 
 #import "AppController.h"
 #import "MainViewController.h"
+#import "JSONFetcher.h"
 
 @implementation AppController
 

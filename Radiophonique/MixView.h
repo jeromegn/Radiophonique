@@ -10,7 +10,7 @@
 
 @interface MixView : NSView
 
-@property (assign) NSImageView *image;
-@property (assign) NSTextView *name;
+@property (retain) NSImageView *image;
+@property (retain) NSTextView *name;
 
 @end

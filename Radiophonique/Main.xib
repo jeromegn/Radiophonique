@@ -297,7 +297,7 @@
 												<bytes key="NSWhite">MQA</bytes>
 											</object>
 											<reference key="NSGridColor" ref="788263328"/>
-											<double key="NSRowHeight">17</double>
+											<double key="NSRowHeight">140</double>
 											<int key="NSTvFlags">-692060160</int>
 											<reference key="NSDelegate"/>
 											<reference key="NSDataSource"/>
@@ -353,7 +353,7 @@
 							<reference key="NSVScroller" ref="57541484"/>
 							<reference key="NSHScroller" ref="264210266"/>
 							<reference key="NSContentView" ref="263786593"/>
-							<bytes key="NSScrollAmts">QSAAAEEgAABBmAAAQZgAAA</bytes>
+							<bytes key="NSScrollAmts">QSAAAEEgAABDDgAAQw4AAA</bytes>
 						</object>
 						<object class="NSButton" id="726310437">
 							<reference key="NSNextResponder" ref="1006"/>
@@ -361,6 +361,7 @@
 							<string key="NSFrame">{{153, 5}, {66, 32}}</string>
 							<reference key="NSSuperview" ref="1006"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:161</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="666935772">
@@ -791,7 +792,6 @@
 					<string>29.IBPluginDependency</string>
 					<string>3.IBPluginDependency</string>
 					<string>30.IBPluginDependency</string>
-					<string>30.ibExternalAutomaticallyCalculatesRowSizeFromViewHeight</string>
 					<string>31.IBPluginDependency</string>
 					<string>31.isInViewBasedMode</string>
 					<string>31.prototypeCellViews</string>
@@ -833,7 +833,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<boolean value="YES"/>
 					<object class="NSArray">

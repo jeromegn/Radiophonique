@@ -9,7 +9,7 @@
 #import "MixesTableViewController.h"
 #import "Mix.h"
 #import "JSONFetcher.h"
-#import "MixViewController.h"
+#import "MixView.h"
 
 @implementation MixesTableViewController
 
@@ -65,9 +65,11 @@
 }
 
 #pragma mark Delegate
-- (MixViewController *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    MixViewController *mixView = [[MixViewController alloc] initWithFrame:CGRectMake(10, 2, 100, 30)];
-    //text.string = [[mixes objectAtIndex:row] objectForKey:@"name"];
+- (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    MixView *mixView    = [[MixView alloc] initWithFrame:CGRectMake(10, 2, 100, 30)];
+
+    [mixView.name insertText:[[mixes objectAtIndex:row] objectForKey:@"name"]];
+    
     return mixView;
 }
 

@@ -67,8 +67,16 @@
 #pragma mark Delegate
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     MixView *mixView    = [[MixView alloc] initWithFrame:CGRectMake(10, 2, 100, 30)];
-
-    [mixView.name insertText:[[mixes objectAtIndex:row] objectForKey:@"name"]];
+    Mix *mix = [mixes objectAtIndex:row];
+    [mixView setMix:mix];
+    
+    /*[mixView.name insertText:[mix objectForKey:@"name"]];
+    
+    NSString *imageUrlString = [[mix objectForKey:@"cover_urls"] objectForKey:@"sq100"];
+    NSURL *imageUrl = [[NSURL alloc] initWithString:imageUrlString];
+    NSImage *image = [[NSImage alloc] initWithContentsOfURL:imageUrl];
+    
+    [mixView.image setImage:image];*/
     
     return mixView;
 }

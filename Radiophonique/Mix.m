@@ -11,16 +11,26 @@
 @implementation Mix
 
 @synthesize name;
+@synthesize image;
 
 - (id)init
 {
     self = [super init];
     if (self) {
-        name = @"Test mix";
-        NSLog(@"%@", [self name]);
+        
     }
     
     return self;
+}
+
+- (id)initWithObject
+{
+    
+}
+
+- (void)play
+{
+    
 }
 
 @end

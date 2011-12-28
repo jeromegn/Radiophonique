@@ -8,9 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class Mix;
+
 @interface MixView : NSView
 
 @property (retain) NSImageView *image;
 @property (retain) NSTextView *name;
+
+@property (assign, nonatomic) Mix *mix;
+
+- (void)setMix:(Mix *)mix;
 
 @end

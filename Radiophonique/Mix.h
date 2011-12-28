@@ -8,10 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class AudioStreamer;
+
 @interface Mix : NSObject {
     NSString *name;
+    NSImage *image;
 }
 
 @property (copy) NSString *name;
+@property (assign) NSImage *image;
+
+- (void)play;
 
 @end

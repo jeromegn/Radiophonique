@@ -23,6 +23,8 @@
 		FD845EAF14AA25B400137DAB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD845EA314AA25B400137DAB /* SBJsonWriter.m */; };
 		FD845EBC14AA43BF00137DAB /* Mix.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD845EBB14AA43BF00137DAB /* Mix.xib */; };
 		FD845EC014AA440E00137DAB /* MixView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD845EBF14AA440E00137DAB /* MixView.m */; };
+		FD845ED614AB7DB600137DAB /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD845ED514AB7DB600137DAB /* AudioStreamer.m */; };
+		FD845ED814AB92B300137DAB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD845ED714AB92B300137DAB /* AudioToolbox.framework */; };
 		FD91836214A6690100ADE448 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD91836114A6690100ADE448 /* Cocoa.framework */; };
 		FD91836C14A6690100ADE448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD91836A14A6690100ADE448 /* InfoPlist.strings */; };
 		FD91836E14A6690100ADE448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91836D14A6690100ADE448 /* main.m */; };
@@ -85,6 +87,9 @@
 		FD845EBB14AA43BF00137DAB /* Mix.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Mix.xib; sourceTree = "<group>"; };
 		FD845EBE14AA440E00137DAB /* MixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixView.h; sourceTree = "<group>"; };
 		FD845EBF14AA440E00137DAB /* MixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixView.m; sourceTree = "<group>"; };
+		FD845ED414AB7DB600137DAB /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioStreamer.h; path = ../AudioStreamer.h; sourceTree = "<group>"; };
+		FD845ED514AB7DB600137DAB /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioStreamer.m; path = ../AudioStreamer.m; sourceTree = "<group>"; };
+		FD845ED714AB92B300137DAB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FD91835D14A6690100ADE448 /* Radiophonique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radiophonique.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD91836114A6690100ADE448 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FD91836414A6690100ADE448 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -120,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD845ED814AB92B300137DAB /* AudioToolbox.framework in Frameworks */,
 				FD91836214A6690100ADE448 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +145,8 @@
 		FD845E7B14AA248100137DAB /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				FD845ED414AB7DB600137DAB /* AudioStreamer.h */,
+				FD845ED514AB7DB600137DAB /* AudioStreamer.m */,
 				FD845E8914AA25A300137DAB /* SBJSON */,
 				FD845E7D14AA24A900137DAB /* HTTPFetcher.h */,
 				FD845E7E14AA24A900137DAB /* HTTPFetcher.m */,
@@ -212,6 +220,7 @@
 		FD91836014A6690100ADE448 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD845ED714AB92B300137DAB /* AudioToolbox.framework */,
 				FD91836114A6690100ADE448 /* Cocoa.framework */,
 				FD91837F14A6690200ADE448 /* SenTestingKit.framework */,
 				FD91836314A6690100ADE448 /* Other Frameworks */,
@@ -438,6 +447,7 @@
 				FD845EAE14AA25B400137DAB /* SBJsonUTF8Stream.m in Sources */,
 				FD845EAF14AA25B400137DAB /* SBJsonWriter.m in Sources */,
 				FD845EC014AA440E00137DAB /* MixView.m in Sources */,
+				FD845ED614AB7DB600137DAB /* AudioStreamer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

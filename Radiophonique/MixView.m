@@ -27,14 +27,6 @@
     return self;
 }
 
-- (void)setMix:(Mix *)mix
-{
-    NSLog(@"Mix assigned");
-    NSLog(@"%@", self.mix);
-    [self.name insertText:mix.name];
-    [self.image setImage:mix.image];
-}
-
 - (void)mouseDown:(NSEvent *)theEvent
 {
     NSLog(@"Mouse down");

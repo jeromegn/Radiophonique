@@ -15,8 +15,6 @@
 @property (retain) NSImageView *image;
 @property (retain) NSTextView *name;
 
-@property (assign, nonatomic) Mix *mix;
-
-- (void)setMix:(Mix *)mix;
+@property (assign) Mix *mix;
 
 @end

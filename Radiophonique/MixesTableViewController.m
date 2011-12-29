@@ -66,8 +66,10 @@
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     MixView *mixView    = [[MixView alloc] initWithFrame:CGRectMake(10, 2, 100, 30)];
     Mix *mix            = [set.mixes objectAtIndex:row];
-    NSLog(@"%@", mix);
     mixView.mix         = mix;
+    
+    [mixView.name insertText:mix.name];
+    [mixView.image setImage:mix.image];
     
     return mixView;
 }

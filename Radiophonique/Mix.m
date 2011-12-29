@@ -56,15 +56,47 @@
 
 - (void)receivePlayResponse:(JSONFetcher *)aFetcher
 {
-    NSLog(@"Response received: %@", [fetcher.result objectForKey:@"set.track.url"]);
+    NSLog(@"Response received: %@", [[[fetcher.result objectForKey:@"set"] objectForKey:@"track"] objectForKey:@"url"]);
     NSAssert(aFetcher == fetcher,
              @"In this example, aFetcher is always the same as the fetcher ivar we set above");
     if ([fetcher.data length] > 0) {
         NSURL *url = [NSURL URLWithString:[fetcher.result objectForKey:@"set.track.url"]];
         streamer = [[AudioStreamer alloc] initWithURL:url];
+        //[streamer start];
+        [[NSNotificationCenter defaultCenter]
+         addObserver:self
+         selector:@selector(playbackStateChanged:)
+         name:ASStatusChangedNotification
+         object:streamer];
+        [streamer start];
     }
     [fetcher release];
     fetcher = nil;
 }
+
+//
+// playbackStateChanged:
+//
+// Invoked when the AudioStreamer
+// reports that its playback status has changed.
+//
+- (void)playbackStateChanged:(NSNotification *)aNotification
+{
+    NSLog(@"Stream playback state changed");
+	if ([streamer isWaiting])
+	{
+		//[self setButtonImage:[NSImage imageNamed:@"loadingbutton"]];
+	}
+	else if ([streamer isPlaying])
+	{
+		//[self setButtonImage:[NSImage imageNamed:@"stopbutton"]];
+	}
+	else if ([streamer isIdle])
+	{
+		//[self destroyStreamer];
+		//[self setButtonImage:[NSImage imageNamed:@"playbutton"]];
+	}
+}
+
 
 @end

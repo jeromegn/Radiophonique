@@ -10,6 +10,7 @@
 #import "Mix.h"
 #import "JSONFetcher.h"
 #import "MixView.h"
+#import "Set.h"
 
 @implementation MixesTableViewController
 
@@ -18,14 +19,14 @@
 {
     self = [super init];
     if (self) {
-        mixes = [[NSMutableArray alloc] init];
+        set = [[Set alloc] init];
     }
     
     return self;
 }
 
 - (void) dealloc {
-    [mixes release];
+    [set release];
     [super dealloc];
 }
 
@@ -34,49 +35,39 @@
     fetcher = [[JSONFetcher alloc]
                initWithURLString:@"http://8tracks.com/mixes?format=json&sort=popular&api_key=87c41cb65d45b260f5da4eeebd7a7bb2c9d2effc"
                receiver:self
-               action:@selector(receiveResponse:)];
+               action:@selector(createSetWithResponse:)];
     [fetcher start];
 }
 
-- (void)receiveResponse:(JSONFetcher *)aFetcher
+- (void)createSetWithResponse:(JSONFetcher *)aFetcher
 {
     NSAssert(aFetcher == fetcher,
              @"In this example, aFetcher is always the same as the fetcher ivar we set above");
     if ([fetcher.data length] > 0) {
-        [mixes addObjectsFromArray:[fetcher.result objectForKey:@"mixes"]];
+        set.id = [fetcher.result objectForKey:@"id"];
+        NSArray *arr = [fetcher.result objectForKey:@"mixes"];
+        NSInteger count = [arr count];
+        NSInteger i = 0;
+        for (i = 0; i < count; i++) {
+            Mix *mix = [Mix mixWithDict:[arr objectAtIndex:i] andSet:set];
+            [set.mixes addObject:mix];
+        }
         [tableView reloadData];
     }
     [fetcher release];
     fetcher = nil;
 }
 
-
-#pragma mark - NSTableView
-#pragma mark Datasource
-//- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-//    Mix *mix = [list objectAtIndex:row];
-//    NSString *identifier = [tableColumn identifier];
-//    NSLog(@"%@", [mix valueForKey:identifier]);
-//    return [mix valueForKey:identifier];
-//}
-
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
-    return [mixes count];
+    return [set.mixes count];
 }
 
 #pragma mark Delegate
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     MixView *mixView    = [[MixView alloc] initWithFrame:CGRectMake(10, 2, 100, 30)];
-    Mix *mix = [mixes objectAtIndex:row];
-    [mixView setMix:mix];
-    
-    /*[mixView.name insertText:[mix objectForKey:@"name"]];
-    
-    NSString *imageUrlString = [[mix objectForKey:@"cover_urls"] objectForKey:@"sq100"];
-    NSURL *imageUrl = [[NSURL alloc] initWithString:imageUrlString];
-    NSImage *image = [[NSImage alloc] initWithContentsOfURL:imageUrl];
-    
-    [mixView.image setImage:image];*/
+    Mix *mix            = [set.mixes objectAtIndex:row];
+    NSLog(@"%@", mix);
+    mixView.mix         = mix;
     
     return mixView;
 }

@@ -25,6 +25,7 @@
 		FD845EC014AA440E00137DAB /* MixView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD845EBF14AA440E00137DAB /* MixView.m */; };
 		FD845ED614AB7DB600137DAB /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD845ED514AB7DB600137DAB /* AudioStreamer.m */; };
 		FD845ED814AB92B300137DAB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD845ED714AB92B300137DAB /* AudioToolbox.framework */; };
+		FD845EDB14ABA1D100137DAB /* Set.m in Sources */ = {isa = PBXBuildFile; fileRef = FD845EDA14ABA1D100137DAB /* Set.m */; };
 		FD91836214A6690100ADE448 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD91836114A6690100ADE448 /* Cocoa.framework */; };
 		FD91836C14A6690100ADE448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD91836A14A6690100ADE448 /* InfoPlist.strings */; };
 		FD91836E14A6690100ADE448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91836D14A6690100ADE448 /* main.m */; };
@@ -90,6 +91,8 @@
 		FD845ED414AB7DB600137DAB /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioStreamer.h; path = ../AudioStreamer.h; sourceTree = "<group>"; };
 		FD845ED514AB7DB600137DAB /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioStreamer.m; path = ../AudioStreamer.m; sourceTree = "<group>"; };
 		FD845ED714AB92B300137DAB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FD845ED914ABA1D100137DAB /* Set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Set.h; sourceTree = "<group>"; };
+		FD845EDA14ABA1D100137DAB /* Set.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Set.m; sourceTree = "<group>"; };
 		FD91835D14A6690100ADE448 /* Radiophonique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radiophonique.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD91836114A6690100ADE448 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FD91836414A6690100ADE448 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -299,6 +302,8 @@
 			children = (
 				FD91846714A9037400ADE448 /* Mix.h */,
 				FD91846814A9037400ADE448 /* Mix.m */,
+				FD845ED914ABA1D100137DAB /* Set.h */,
+				FD845EDA14ABA1D100137DAB /* Set.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 				FD845EAF14AA25B400137DAB /* SBJsonWriter.m in Sources */,
 				FD845EC014AA440E00137DAB /* MixView.m in Sources */,
 				FD845ED614AB7DB600137DAB /* AudioStreamer.m in Sources */,
+				FD845EDB14ABA1D100137DAB /* Set.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

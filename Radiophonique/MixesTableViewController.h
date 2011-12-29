@@ -10,15 +10,16 @@
 
 @class JSONFetcher;
 @class MixViewController;
+@class Set;
 
 @interface MixesTableViewController : NSObject <NSTableViewDataSource> {
 @private
     IBOutlet NSTableView *tableView;
-    NSMutableArray *mixes;
+    Set *set;
     JSONFetcher *fetcher;
 }
 
 -(IBAction)add:(id)sender;
--(void)receiveResponse:(JSONFetcher *)aFetcher;
+-(void)createSetWithResponse:(JSONFetcher *)aFetcher;
 
 @end

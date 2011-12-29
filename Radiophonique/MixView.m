@@ -29,16 +29,17 @@
 
 - (void)setMix:(Mix *)mix
 {
-    self.mix = [mix retain];
+    NSLog(@"Mix assigned");
+    NSLog(@"%@", self.mix);
+    [self.name insertText:mix.name];
+    [self.image setImage:mix.image];
+}
 
-    [self.name insertText:[mix objectForKey:@"name"]];
-    
-    NSString *imageUrlString = [[mix objectForKey:@"cover_urls"] objectForKey:@"sq100"];
-    NSURL *imageUrl = [[NSURL alloc] initWithString:imageUrlString];
-    NSImage *image = [[NSImage alloc] initWithContentsOfURL:imageUrl];
-    
-    [self.image setImage:image];
-    
+- (void)mouseDown:(NSEvent *)theEvent
+{
+    NSLog(@"Mouse down");
+    NSLog(@"%@", self.mix);
+    [self.mix play];
 }
 
 - (void)dealloc {

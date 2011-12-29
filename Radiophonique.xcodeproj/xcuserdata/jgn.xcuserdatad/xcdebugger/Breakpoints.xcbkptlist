@@ -9,12 +9,12 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Radiophonique/MixesTableViewController.m"
-         timestampString = "346700079.274912"
+         timestampString = "346865024.970735"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "48"
-         endingLineNumber = "48"
-         landmarkName = "-receiveResponse:"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
+         landmarkName = "-createSetWithResponse:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -29,6 +29,48 @@
          startingLineNumber = "30"
          endingLineNumber = "30"
          landmarkName = "-setMix:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Radiophonique/Mix.m"
+         timestampString = "346876126.311636"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
+         landmarkName = "-receivePlayResponse:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Radiophonique/Set.h"
+         timestampString = "346793050.75787"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "16"
+         endingLineNumber = "16"
+         landmarkName = "@property (assign) NSInteger *id;"
+         landmarkType = "19">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Radiophonique/MixesTableViewController.m"
+         timestampString = "346793139.713412"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "47"
+         endingLineNumber = "47"
+         landmarkName = "-createSetWithResponse:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

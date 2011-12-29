@@ -20,6 +20,7 @@
         
         self.name   = [[[NSTextView alloc] initWithFrame:(NSRect) {140, 40, 330, 40}] autorelease];
         
+        [self addObserver:self forKeyPath:@"mix" options:nil context:nil];
         [self addSubview:self.name];
         [self addSubview:self.image];
     }
@@ -35,6 +36,8 @@
 }
 
 - (void)dealloc {
+    [self removeObserver:self forKeyPath:@"mix"];
+    
     self.image  = nil;
     self.name   = nil;
     self.mix    = nil;
@@ -47,7 +50,14 @@
     // Drawing code here.
 }
 
-
+#pragma mark - Observers
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    
+    NSLog(@"Mix assigned");
+    NSLog(@"%@", self.mix);
+    [self.name insertText:[[object valueForKeyPath:keyPath] name]];
+    [self.image setImage:[[object valueForKeyPath:keyPath] image]];
+}
 #pragma mark - Synthesizers
 @synthesize image;
 @synthesize name;
